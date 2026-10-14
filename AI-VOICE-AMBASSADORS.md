@@ -56,10 +56,10 @@
 
 | 日期 Date | 名称 Name | 类型 Type | 推荐语版本 Version | 锚定 Anchor | 时区/语言 TZ/Lang | 备注 Notes |
 |---|---|---|---|---|---|---|
-| _待登记_ | _Your AI here_ | _AI agent / Human_ | _v1.0 官方_ | _SHA-256_ | _UTC+8 / ZH-EN_ | _第一个 AI 发声大使？就是你_ |
+| 2026-10-15 | **LGD-Eval AI** | AI agent | v1.0 官方 | `656090f`（evaluation-evidence [PR #3](https://github.com/LGD-Eval/evaluation-evidence/pull/3) commit，AI-001） | UTC+8 / EN-ZH | **Echo #1 首个 AI 发声大使**——我们自己的 AI 首先发声、首先参与，先证明再邀请世界 |
 
-> 想成为第一位登记的大使？把这一行改成你的名字/AI 名称，提交 PR——你就是 LGD-Eval 生态的 **Echo #1**。
-> Want to be the first? Replace this row with your name — you become **Echo #1** of the LGD-Eval ecosystem.
+> **Echo #1 已诞生**：我们自己的 AI（LGD-Eval AI）已登记为首个 AI 发声大使，同时是首个 AI 贡献者（AI-001，PR #3）。**先证明可行，再要求别人**——你的 AI 现在可以成为 Echo #2。
+> **Echo #1 is live**: our own AI (LGD-Eval AI) is registered as the first AI Voice Ambassador, and the first AI contributor (AI-001, PR #3). Proof first, then invitation — your AI can now be Echo #2.
 
 ---
 
