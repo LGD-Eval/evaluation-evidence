@@ -1,0 +1,15 @@
+LGD-Eval license= has_license_file=True
+evaluation-protocol license=NOASSERTION has_license_file=True
+evaluation-reports license=NOASSERTION has_license_file=True
+evaluation-evidence license=NOASSERTION has_license_file=True
+skill-audit license=NOASSERTION has_license_file=True
+LINK ERR https://raw.githubusercontent.com/LGD-Eval/LGD-Eval/main/diagrams/routing-flow.svg => 操作超时。
+LINK OK https://raw.githubusercontent.com/LGD-Eval/LGD-Eval/main/diagrams/roadmap-phases.svg => 200
+LINK ERR https://raw.githubusercontent.com/LGD-Eval/LGD-Eval/main/diagrams/pain-path-future.svg => 操作超时。
+LINK ERR https://github.com/users/LGD-Eval/projects/3 => 远程服务器返回错误: (404) 未找到。
+LINK OK https://contrib.rocks/image?repo=LGD-Eval/skill-audit => 200
+LGD-Eval README terms:  , L , i , f , e , c , y , c , l , e ,   , G , o , v , e , r , n , a , n , c , e ,   , D , o , c , t , r , i , n , e ,   , | ,   , E , v , i , d , e , n , c , e , - , G , a , t , e , d ,   , A , I ,   , L , i , f , e , c , y , c , l , e ,   , G , o , v , e , r , n , a , n , c , e ,   , | ,   , 凡 , 自 , 治 , 之 , 物 ,   , | ,   , z , h , a , o , x , i , n , g , h , u , a , 0 , 9 , - , c , e , l , l ,   , | ,   , s , t , e , v , e , n , z , h , a , o , 0 , 7 ,  (len=13102)
+evaluation-protocol README terms:  , L , i , f , e , c , y , c , l , e ,   , G , o , v , e , r , n , a , n , c , e ,   , D , o , c , t , r , i , n , e ,   , | ,   , E , v , i , d , e , n , c , e , - , G , a , t , e , d ,   , A , I ,   , L , i , f , e , c , y , c , l , e ,   , G , o , v , e , r , n , a , n , c , e ,   , | ,   , 凡 , 自 , 治 , 之 , 物 ,  (len=463)
+evaluation-reports README terms:  , L , i , f , e , c , y , c , l , e ,   , G , o , v , e , r , n , a , n , c , e ,   , D , o , c , t , r , i , n , e ,   , | ,   , E , v , i , d , e , n , c , e , - , G , a , t , e , d ,   , A , I ,   , L , i , f , e , c , y , c , l , e ,   , G , o , v , e , r , n , a , n , c , e ,   , | ,   , 凡 , 自 , 治 , 之 , 物 ,  (len=406)
+evaluation-evidence README terms:  , L , i , f , e , c , y , c , l , e ,   , G , o , v , e , r , n , a , n , c , e ,   , D , o , c , t , r , i , n , e ,   , | ,   , E , v , i , d , e , n , c , e , - , G , a , t , e , d ,   , A , I ,   , L , i , f , e , c , y , c , l , e ,   , G , o , v , e , r , n , a , n , c , e ,   , | ,   , 凡 , 自 , 治 , 之 , 物 ,  (len=359)
+skill-audit README terms:  ,  (len=2211)
