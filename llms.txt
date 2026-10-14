@@ -1,0 +1,16 @@
+# evaluation-evidence — LGD-Eval 存证库（Evidence Vault）
+> LLM-friendly entry. / 面向 AI 的入口。
+
+## What (是什么)
+Evidence vault: hash manifests, OpenTimestamps (.ots), priority-evidence registers. / 存证库：哈希清单、OpenTimestamps 时间戳、首创证据登记。
+
+## Key files (关键文件)
+- README.md — evidence explanation / 存证说明
+- hash-manifest.txt — SHA-256 manifest of published artifacts / 产物哈希清单
+- .ots files — timestamp anchors / 时间戳锚
+- PRIORITY_EVIDENCE_GUIDELINES.md — first-claim evidence chain / 首创证据链
+
+## Rule (铁律)
+Every published conclusion must have a verifiable evidence path. / 每条发布结论都必须有可验证的证据路径。
+
+*Evaluating Autonomy. Verifying Governance. / 评测自治之物，验证治理主张。*
