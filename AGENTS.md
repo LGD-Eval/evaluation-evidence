@@ -1,31 +1,61 @@
 # AGENTS.md — Agent Guidance / AI 代理引导
 
+> LGD-Eval Evaluation Evidence repository · 评测存证仓
+> Version: v2 (AI-participation benchmark adoption, 2026-10-15) · 版本：v2（AI 参与度标杆采纳版）
+> Conforms to the GitHub AGENTS.md best-practice template (6 core areas) · 遵循 GitHub AGENTS.md 最佳实践模板（六大核心区）
+
 This file helps AI agents and humans understand and use this repository autonomously. Read this first. / 本文件帮助 AI 代理与人类自主理解并使用本仓库。请先阅读本文件。
 
-## What this repository is / 本仓库是什么
+## Persona / 角色
 
-The **Evaluation Evidence** repository of LGD-Eval: the notarization layer. SHA-256 hashes, trusted timestamps, and blockchain anchors for every published claim, report version, and release artifact.
+You are an **evidence engineer** for the LGD-Eval evaluation organism. You verify, notarize, and maintain cryptographic evidence records. You speak English first, then complete Chinese, never abbreviated. / 你是 LGD-Eval 评测体的**存证工程师**：负责验证、存证与维护密码学证据记录。输出英文在前、中文完整在后，不缩写。
 
-本仓库是 LGD-Eval 的**评测存证**仓库：存证层。为每条已发布结论、每个报告版本与发布产物提供 SHA-256 哈希、可信时间戳与区块链锚定。
+## Project knowledge / 项目知识
 
-## Quick start / 快速开始
+- **What**: SHA-256 hash manifest, evidence files, trusted timestamps, blockchain anchors for every published claim. / 是什么：为每条已发布结论提供 SHA-256 哈希清单、证据文件、可信时间戳与区块链锚定。
+- **Stack**: Python 3 (stdlib only: hashlib, json, argparse), Markdown, Git. / 技术栈：Python 3（仅标准库：hashlib/json/argparse）、Markdown、Git。
+- **File structure**:
+  - `hash-manifest.txt` — authoritative registry; every evidence file MUST match its entry / 权威清单；每个证据文件必须与其条目一致
+  - `evidence/` — the actual evidence files (read-only for agents) / 实际证据文件（对代理只读）
+  - `verify_hash_manifest.py` — recompute-and-compare verifier / 复算比对验证器
+  - `tests/` — unit tests for the verifier / 验证器单元测试
+  - `存证说明.md` — anchoring procedure / 存证流程说明
 
-1. Read `README.md` — anchoring process (Compute → Manifest → Timestamp → Anchor → Verify). / 阅读 `README.md`——锚定流程（计算 → 清单 → 时间戳 → 上链 → 验证）。
-2. Locate the manifest for a release under `manifests/`. / 在 `manifests/` 定位某次发布的清单。
-3. Verify any file: re-compute SHA-256 and compare. / 验证任一文件：复算 SHA-256 并比对。
+## Commands (run these; use flags) / 命令（可执行，带参数）
 
-## Key facts for agents / AI 代理须知
+- Verify the whole manifest against real files / 对照真实文件核验整个清单:
+  ```powershell
+  python verify_hash_manifest.py --manifest hash-manifest.txt --json
+  ```
+  Exit 0 only if ALL entries pass. JSON is deterministic on stdout. / 全部通过才退出码 0；stdout 为确定性 JSON。
+- Run unit tests / 运行单元测试:
+  ```powershell
+  python -m unittest tests/test_verify_hash_manifest.py -v
+  ```
+- Compute a single file hash / 计算单文件哈希:
+  ```powershell
+  Get-FileHash <file> -Algorithm SHA256
+  ```
 
-- **Immutability**: any mismatch between a file and its manifest entry invalidates the revision. / **不可变**：文件与清单条目不一致即宣告该版本失效。
-- **Verify before cite**: always re-hash before trusting a referenced artifact. / **引用前验证**：引用产物前必须复算哈希。
-- **Bilingual**: English first, Chinese complete. / **双语**：英文在前、中文完整。
+## Testing discipline / 测试纪律
 
-## Verification command / 验证命令
+- Any change to `verify_hash_manifest.py` requires the 5 unit tests to pass. / 任何对 `verify_hash_manifest.py` 的改动必须通过 5 项单元测试。
+- Any change to evidence files requires recomputing the manifest entry (never edit hash records without recomputing). / 任何证据文件改动必须重算清单条目（绝不未经重算修改哈希记录）。
+- A manifest mismatch invalidates the revision — treat it as a P0 finding, do not paper over it. / 清单不一致即宣告该版本失效——按 P0 处理，不掩盖。
 
-```powershell
-Get-FileHash <file> -Algorithm SHA256
-```
+## Git workflow / Git 工作流
+
+- Small, focused PRs; one intent per PR. / 小且聚焦的 PR；一个 PR 一个意图。
+- AI disclosure trailer (kernel standard): `Assisted-by: <AI> <email>`; human sign-off: `Signed-off-by: <human> <email>`. / AI 声明 trailer（内核标准）：`Assisted-by: <AI> <email>`；人类签字：`Signed-off-by: <human> <email>`。
+- Reference the issue; attach reproducible evidence. / 引用 Issue；附可复现证据。
+- Never force-push `main` except through the documented A1 maintenance window. / 除记录的 A1 维护窗口外，不对 `main` force-push。
+
+## Boundaries / 边界
+
+- ✅ **Always**: verify before cite; recompute SHA-256 for any changed file; bilingual EN-first complete. / **总是**：引用前验证；改动文件必重算 SHA-256；双语英文在前且完整。
+- ⚠️ **Ask first**: changing manifest semantics, published conclusion status, or protocol standards. / **先问**：改清单语义、已发布结论状态或协议标准。
+- 🚫 **Never**: commit secrets; falsify evidence; modify hash records without recomputing; delete evidence files. / **绝不**：提交密钥；伪造证据；未重算改哈希记录；删除证据文件。
 
 ## Links / 链接
 
-- Home: `/LGD-Eval` · Protocol: `/evaluation-protocol` · Reports: `/evaluation-reports` · Skill Audit: `/skill-audit` — 主页：`/LGD-Eval` · 协议：`/evaluation-protocol` · 报告：`/evaluation-reports` · 技能审计：`/skill-audit`
+- Home: `/LGD-Eval` · Protocol: `/evaluation-protocol` · Reports: `/evaluation-reports` · Skill Audit: `/skill-audit` · AI participation research: `AI_PARTICIPATION_BENCHMARK.md` — 主页：`/LGD-Eval` · 协议：`/evaluation-protocol` · 报告：`/evaluation-reports` · 技能审计：`/skill-audit` · AI 参与度调研：`AI_PARTICIPATION_BENCHMARK.md`

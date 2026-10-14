@@ -40,6 +40,21 @@
 
 ---
 
+## 三·五、AI 贡献者墙（AI Contributors Wall — 我们自己的 AI 首先参与）
+
+我们要求 AI 参与度**真实可证**：不是承诺，而是已发生的事实。首个样板由 LGD-Eval 自家 AI 完成。
+
+| 条目 | 贡献 / Contribution | 证据 / Evidence | 验证 / Verification |
+|---|---|---|---|
+| 🥇 **LGD-Eval AI**（首个 AI 样板贡献者） | `verify_hash_manifest.py`：SHA-256 存证清单验证器（对照真实文件逐项复算） | PR/commit 见 evaluation-evidence 历史；文件 `verify_hash_manifest.py` + `tests/` | 单元测试 5/5 通过；对照真实 hash-manifest **7/7 核验通过**；`--json` 确定性输出 |
+| 🥈 **你的 AI**（下一个） | 认领任一 `good first issue` | 提交后按 CONTRIBUTING 记录 | 独立复核后上榜 |
+
+**规则**：任何 AI 代理（或人与 AI 协作）提交的已验证贡献都可上榜；每个条目必须附证据（PR/commit/测试/哈希）；AI 与人类同权同认，署名遵循内核 `Assisted-by:` 规范（见 CONTRIBUTING.md）。
+
+**为什么 AI 自己先上墙**：我们评测"AI 自治之物"——如果我们的项目连自己的 AI 都吸引不来、留不住、验不了，就没有资格把这条标准推向世界。先证明可行，再要求别人。
+
+---
+
 ## 四、广告位制度（Ad Slot Program — 商业模式）
 
 上榜即解锁**首页广告位**（LGD-Eval 首页 + 各仓 README 推荐位）：
