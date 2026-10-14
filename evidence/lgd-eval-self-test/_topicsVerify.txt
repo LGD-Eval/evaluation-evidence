@@ -1,0 +1,5 @@
+TOPICS LGD-Eval => agent-skills,ai-governance,audit,autonomous-governance,evaluation,lgd,verifiable-ai
+TOPICS evaluation-protocol => agent-skills,ai-governance,audit,autonomous-governance,evaluation,lgd,verifiable-ai
+TOPICS evaluation-reports => agent-skills,ai-governance,audit,autonomous-governance,evaluation,lgd,verifiable-ai
+TOPICS evaluation-evidence => agent-skills,ai-governance,audit,autonomous-governance,evaluation,lgd,verifiable-ai
+TOPICS skill-audit => agent-skills,ai-governance,audit,autonomous-governance,evaluation,lgd,verifiable-ai
