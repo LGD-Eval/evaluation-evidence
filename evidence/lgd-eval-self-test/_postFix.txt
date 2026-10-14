@@ -1,0 +1,9 @@
+LGD-Eval license=CC-BY-4.0
+evaluation-protocol license=CC-BY-4.0
+evaluation-reports license=CC-BY-4.0
+evaluation-evidence license=CC-BY-4.0
+skill-audit license=Apache-2.0
+PROJ #3 public=True LGD-Eval Evaluation Board
+PROJ #2 public=True LGD-Eval - Contribution Board
+PROJ #1 public=True LGD-Eval - Ecosystem Roadmap
+README: HallOfFame=True RefEarn=True NoCode=True ContributorsWall=True VisitTracker=True AIparticipation=True len=13102
