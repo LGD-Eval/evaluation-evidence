@@ -1,0 +1,82 @@
+[
+  {
+    "repo": "udi-hospital-trace",
+    "script": "udi_hospital_trace.py",
+    "selftest_exit": 0,
+    "selftest_out": "[selftest] positive: valid GTIN-14 accepted PASS\n[selftest] negative: invalid check digit rejected PASS\n[selftest] positive: HIBCC recognized PASS\n[selftest] negative: unknown format raises PASS\n",
+    "selftest_err": "",
+    "demo_exit": 0,
+    "demo_out": "=== udi-hospital-trace demo (v0.1.0) ===\n[PASS] (01)00614141234561(21)123456(17)260101 -> {\"issuer\": \"GS1\", \"aids\": {\"01\": \"00614141234561\", \"21\": \"123456\", \"17\": \"260101\"}, \"gtin14\": \"00614141234561\", \"check_digit_valid\": true, \"serial\": \"123456\", \"expiry\": \"260101\", \"format\": \"GS1\"}\n[BLOCK A1] (01)00614141234568(21)999999 -> {\"issuer\": \"GS1\", \"aids\": {\"01\": \"00614141234568\", \"21\": \"999999\"}, \"gt",
+    "sha256": "057684f1b0301e26472f96c9226efc5bd867fa80f9aeaf33ed7e3422b061a5a1"
+  },
+  {
+    "repo": "ortho-registry-rwe",
+    "script": "ortho_registry_rwe.py",
+    "selftest_exit": 0,
+    "selftest_out": "[selftest] positive: 6-week followup computed PASS\n[selftest] positive: 1-year followup computed PASS\n[selftest] negative: PROM 105 rejected PASS\n[selftest] negative: month-roll edge (Feb 28 -> May 28) PASS\n",
+    "selftest_err": "",
+    "demo_exit": 0,
+    "demo_out": "=== ortho-registry-rwe demo (v0.1.0) ===\n[SCHEDULE] [{\"point\": \"6week\", \"due\": \"2026-04-21\"}, {\"point\": \"3month\", \"due\": \"2026-06-10\"}, {\"point\": \"1year\", \"due\": \"2027-03-10\"}, {\"point\": \"2year\", \"due\": \"2028-03-10\"}, {\"point\": \"5year\", \"due\": \"2031-03-10\"}]\n[EVENTS]   [{\"patient_key\": \"p1\", \"implant_date\": \"2026-03-10\", \"prom_score\": 78, \"prom_valid\": true, \"adverse_event\": \"\", \"event_id\": \"evt-6",
+    "sha256": "c1759742d5192aede6fef5a260ccc0d24ddafc4d17e4b2e83c52f8d011367d21"
+  },
+  {
+    "repo": "vigilance-hospital-report",
+    "script": "vigilance_hospital_report.py",
+    "selftest_exit": 0,
+    "selftest_out": "[selftest] positive: NMPA 20-working-day deadline PASS\n[selftest] negative: missing event_date rejected PASS\n[selftest] negative: invalid severity rejected PASS\n[selftest] positive: EU 15 working days (Sat start -> Mon) PASS\n",
+    "selftest_err": "",
+    "demo_exit": 0,
+    "demo_out": "=== vigilance-hospital-report demo (v0.1.0) ===\n[NMPA] {\"jurisdiction\": \"NMPA\", \"event_date\": \"2026-10-05\", \"deadline\": \"2026-11-02\", \"statutory_days\": 20}\n[EU-MDR] {\"jurisdiction\": \"EU-MDR\", \"event_date\": \"2026-10-05\", \"deadline\": \"2026-10-26\", \"statutory_days\": 15}\n[FDA] {\"jurisdiction\": \"FDA\", \"event_date\": \"2026-10-05\", \"deadline\": \"2026-11-16\", \"statutory_days\": 30}\n[EVENT] {\"ok\": true, \"even",
+    "sha256": "77b0cc2bcff0f91d286bf53a5709481612281000c8ff817308a828c7148996fe"
+  },
+  {
+    "repo": "fhir-hospital-interop",
+    "script": "fhir_hospital_interop.py",
+    "selftest_exit": 0,
+    "selftest_out": "[selftest] positive: Patient resource generated PASS\n[selftest] positive: Device with UDI identifier PASS\n[selftest] negative: unsupported resourceType raises PASS\n[selftest] positive: ICD-10 lookup M17 PASS\n",
+    "selftest_err": "",
+    "demo_exit": 0,
+    "demo_out": "=== fhir-hospital-interop demo (v0.1.0) ===\n[PATIENT] {\"resourceType\": \"Patient\", \"id\": \"fhir-735feede3bf4\", \"meta\": {\"profile\": [\"http://hl7.org/fhir/R4\"]}, \"identifier\": [{\"system\": \"http://hospital.local/mrn\", \"value\": \"MR-001\"}], \"gender\": \"male\"}\n[DEVICE]  {\"resourceType\": \"Device\", \"id\": \"fhir-b2a82b6d8079\", \"meta\": {\"profile\": [\"http://hl7.org/fhir/R4\"]}, \"identifier\": [{\"type\": {\"text\": \"U",
+    "sha256": "bf9573fb412d00a00b7090f0b53813fdbdf72c3d5d0fe4bf762c37d1cf383060"
+  },
+  {
+    "repo": "equipment-asset-management",
+    "script": "equipment_asset_management.py",
+    "selftest_exit": 0,
+    "selftest_out": "[selftest] positive: 6-month PM due PASS\n[selftest] negative: expired calibration flagged PASS\n[selftest] negative: missing asset_id rejected PASS\n[selftest] positive: 9yo > 8y life retires PASS\n",
+    "selftest_err": "",
+    "demo_exit": 0,
+    "demo_out": "=== equipment-asset-management demo (v0.1.0) ===\n[PM]      {\"last_pm\": \"2026-01-15\", \"interval_months\": 6, \"next_pm_due\": \"2026-07-15\"}\n[CAL]     {\"last_calibration\": \"2025-10-01\", \"expiry\": \"2026-10-01\", \"days_left\": -15, \"status\": \"expired\"}\n[ASSET]   {\"ok\": true, \"asset_id\": \"EQ-001\", \"name\": \"C-Arm X-ray\", \"dept\": \"手术室\", \"value_cny\": 800000, \"calibration\": {\"last_calibration\": \"2025-10-01\", \"e",
+    "sha256": "2b9865325042d365459e5c989611527a514521174f20c7853bd60b09f0c8e505"
+  },
+  {
+    "repo": "supplier-audit",
+    "script": "supplier_audit.py",
+    "selftest_exit": 0,
+    "selftest_out": "[selftest] positive: full compliance -> grade A PASS\n[selftest] negative: partial -> grade D PASS\n[selftest] negative: expired license flagged PASS\n[selftest] positive: valid license ok PASS\n",
+    "selftest_err": "",
+    "demo_exit": 0,
+    "demo_out": "=== supplier-audit demo (v0.1.0) ===\n[AUDIT-A] {\"ok\": true, \"grade\": \"A\", \"score\": 1.0, \"decision_id\": \"aud-cba54d04a6\"}\n[AUDIT-D] {\"ok\": false, \"grade\": \"D\", \"missing\": [\"iso13485\", \"gsp\", \"quality_agreement\", \"audit_report\", \"recall_history\"], \"decision_id\": \"aud-8a9095ce9d\"}\n[LICENSE] [{\"license\": \"ISO13485\", \"expiry\": \"2027-03-01\", \"days_left\": 136, \"status\": \"ok\"}, {\"license\": \"GSP\", \"expiry\"",
+    "sha256": "def2e42f5ad4cd0b16795c163d779b8e1a9c2f921c41dac3d4642a64139479f9"
+  },
+  {
+    "repo": "hospital-admission-eval",
+    "script": "hospital_admission_eval.py",
+    "selftest_exit": 0,
+    "selftest_out": "[selftest] positive: complete valid licenses PASS\n[selftest] negative: missing registration rejected PASS\n[selftest] negative: negative price rejected PASS\n[selftest] positive: 100k/5y > 5k threshold flags high-cost PASS\n",
+    "selftest_err": "",
+    "demo_exit": 0,
+    "demo_out": "=== hospital-admission-eval demo (v0.1.0) ===\n[LICENSE] {\"ok\": true, \"problems\": [], \"decision_id\": \"adm-e831053020\"}\n[HECO]    {\"ok\": true, \"annual_total_cny\": 1000000, \"cost_per_patient_year_cny\": 10000.0, \"reoperation_cost_cny\": 50000.0, \"verdict\": \"high-cost\"}\n[VERDICT] {\"admit\": \"conditional\", \"reason\": \"high cost per patient-year — require budget approval\"}\n",
+    "sha256": "ee5c3cbdac0d6bed10a8df1d0b24e720f07e5bff2e183d99e023300223c6b778"
+  },
+  {
+    "repo": "hospital-llm-training",
+    "script": "hospital_llm_training.py",
+    "selftest_exit": 0,
+    "selftest_out": "[selftest] positive: PII scanner detects phone PASS\n[selftest] negative: clean text has zero hits PASS\n[selftest] positive: pseudonymization removes PII PASS\n[selftest] negative: split is deterministic PASS\n",
+    "selftest_err": "",
+    "demo_exit": 0,
+    "demo_out": "=== hospital-llm-training demo (v0.1.0) ===\n[PREPARE] {\"tool\": \"hospital-llm-training\", \"version\": \"0.1.0\", \"records_in\": 6, \"rows_after_pii_removal\": 6, \"pii_hits_by_type\": {\"name_zh\": 24, \"phone\": 2, \"medical_record_no\": 1}, \"split\": {\"train\": 4, \"val\": 1, \"test\": 1}, \"split_seed\": 42, \"salt_policy\": \"keyed-sha256+salt\"}\n[CONFIG]  {\"base_model\": \"Qwen2.5-7B-Instruct\", \"method\": \"lora\", \"r\": 8, \"",
+    "sha256": "763998d445ed3a3a912990f80d4bc968807d8b8906a6fe2dcbeddb9bedbe5811"
+  }
+]
