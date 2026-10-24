@@ -1,0 +1,78 @@
+﻿{
+    "contentZhAvailable":  false,
+    "latestVersion":  {
+                          "changelog":  "v1.0.1 initial",
+                          "createdAt":  1792207408016,
+                          "version":  "1.0.1"
+                      },
+    "namespace":  {
+                      "canonicalName":  "@user_8a3569c1/summarize-pro",
+                      "displayName":  "user_8a3569c1",
+                      "handle":  "user_8a3569c1",
+                      "publicSlug":  "summarize-pro"
+                  },
+    "owner":  {
+                  "displayName":  "注册老炮@MedXpert I SynomosAI",
+                  "handle":  "user_8a3569c1",
+                  "image":  null
+              },
+    "securityReports":  {
+                            "keen":  {
+                                         "reportUrl":  "https://tix.qq.com/search/skill?keyword=bfa073127d5d583c1ce6566e1fbe3d75",
+                                         "status":  "benign",
+                                         "statusText":  "安全，无风险"
+                                     },
+                            "sanbu":  {
+                                          "reportUrl":  "https://static.cloudsec.tencent.com/html-report-v2/2026/10/17/2177627_b386a059c6d94b47019debd0fb2d2f08.html?q-sign-algorithm=sha1\u0026q-ak=REDACTED_REDACTED_BY_LGD_EVAL\u0026q-sign-time=1792677189%3B1824213189\u0026q-key-time=1792677189%3B1824213189\u0026q-header-list=host\u0026q-url-param-list=\u0026q-signature=REDACTED",
+                                          "status":  "benign",
+                                          "statusText":  "安全，无风险"
+                                      }
+                        },
+    "skill":  {
+                  "authorVerifiedHandle":  null,
+                  "category":  "knowledge-management",
+                  "claim_state":  "unclaimed",
+                  "claimable":  false,
+                  "claimed_user_handle":  null,
+                  "createdAt":  1788186228520,
+                  "displayName":  "summarize-pro",
+                  "ext":  null,
+                  "githubAuthorLogin":  null,
+                  "hasOverview":  false,
+                  "iconUrl":  null,
+                  "isAuthorVerified":  false,
+                  "isServiceized":  false,
+                  "labels":  {
+                                 "requires_api_key":  "false"
+                             },
+                  "last_synced_at":  null,
+                  "overviewMd":  "",
+                  "slug":  "summarize-pro",
+                  "source":  "community",
+                  "sourceUrl":  null,
+                  "stats":  {
+                                "comments":  0,
+                                "downloads":  9781,
+                                "installs":  0,
+                                "stars":  0,
+                                "versions":  4
+                            },
+                  "subCategories":  [
+                                        {
+                                            "key":  "knowledge-summary",
+                                            "name":  "摘要总结"
+                                        }
+                                    ],
+                  "summary":  "增强版内容总结技能，支持 20+ 种输出格式，用于回答「帮我出个会议纪要」「两个方案做成对比表」「梳理成时间线」这类问题",
+                  "summary_zh":  "增强版内容总结技能，支持 20+ 种输出格式，用于回答「帮我出个会议纪要」「两个方案做成对比表」「梳理成时间线」这类问题",
+                  "tags":  {
+                               "latest":  "1.0.1"
+                           },
+                  "updatedAt":  1792848577615,
+                  "upstream_owner_login":  null,
+                  "upstream_url":  null,
+                  "verified":  false
+              },
+    "slug":  "summarize-pro"
+}
+
