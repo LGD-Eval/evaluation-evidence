@@ -28,7 +28,7 @@
 ### A3. 它占据基础设施层生态位（前景）
 - AI 自治是确定性趋势；评测/审计/治理是它的**基础设施层**——早期占位持续累积
 - 三权闭环：理论（zhaoxinghua09-cell）→ 产品（stevenzhao07）→ 评测（LGD-Eval）
-- 官方身份：LGD = Lifecycle Governance Doctrine · Evidence-Gated AI Lifecycle Governance · 凡自治之物
+- 官方身份：LGD = Lifecycle Governance Doctrine · registered · evidenced · gated · 凡自治之物
 
 ### A4. 前期参与有真实回报
 - 标准共同署名（测试专家手册 L0-L13 塑造权）
@@ -130,7 +130,7 @@ This is the **profile repository** of LGD-Eval, the independent evaluation insti
 - **Independence**: LGD-Eval never reviews its own output; independent verification is mandatory. / **独立性**：LGD-Eval 不自查自有产物，独立复核是强制要求。
 - **Bilingual**: All published content is English-first, with complete Chinese following. / **双语**：所有发布内容英文在前、中文在后且完整。
 - **Evidence**: Every claim must trace to a reproducible source, hash-anchored. / **证据**：每条结论必须可复现溯源并哈希锚定。
-- **Language of identity**: LGD = Lifecycle Governance Doctrine; English formal term = Evidence-Gated AI Lifecycle Governance; Chinese sovereign term = 凡自治之物. / **身份语言**：LGD = Lifecycle Governance Doctrine；英文正式术语 = Evidence-Gated AI Lifecycle Governance；中文主权词 = 凡自治之物。
+- **Language of identity**: LGD = Lifecycle Governance Doctrine; English formal term = Lifecycle Governance Doctrine; Chinese sovereign term = 凡自治之物. / **身份语言**：LGD = Lifecycle Governance Doctrine；英文核心三律 = registered · evidenced · gated；中文主权词 = 凡自治之物。
 
 ## Ecosystem / 生态
 
@@ -179,7 +179,7 @@ LGD-Eval ────────────► 独立评测 Independent Evalua
 
 | 您的意图 / Your intent | 去往 / Go to | 做什么 / What to do |
 |---|---|---|
-| 想学 LGD 理论 / 治理学 / 凡自治之物 | [zhaoxinghua09-cell](https://github.com/zhaoxinghua09-cell)（理论号） | 读 lgd-theory 系列：Lifecycle Governance Doctrine · Evidence-Gated AI Lifecycle Governance |
+| 想学 LGD 理论 / 治理学 / 凡自治之物 | [zhaoxinghua09-cell](https://github.com/zhaoxinghua09-cell)（理论号） | 读 lgd-theory 系列：Lifecycle Governance Doctrine · registered · evidenced · gated |
 | 想用医疗 AI 工具链 / 医疗合规 | [stevenzhao07](https://github.com/stevenzhao07)（产品号） | MedXpert：医疗器械全生命周期工具链，25 仓技能可插拔 |
 | 想被独立评测 / 第三方验收 | **LGD-Eval/evaluation-protocol** + **evaluation-reports** | 按测试专家手册 L0-L13 提交评测；查看已发布实测报告 |
 | 担心 AI 技能投毒 / 想审计技能 | **LGD-Eval/skill-audit** | 运行 scanner.py 检测 manifest/prompt 投毒；提交可疑技能样本 |
