@@ -1,0 +1,85 @@
+﻿{
+    "namespace":  {
+                      "canonicalName":  "@user_8a3569c1/summarize-pro",
+                      "displayName":  "user_8a3569c1",
+                      "handle":  "user_8a3569c1",
+                      "publicSlug":  "summarize-pro"
+                  },
+    "slug":  "summarize-pro",
+    "source":  "community",
+    "versions":  [
+                     {
+                         "changelog":  "v1.0.1 initial",
+                         "createdAt":  1792207408016,
+                         "securityReports":  {
+                                                 "keen":  {
+                                                              "status":  "benign",
+                                                              "statusText":  "安全，无风险",
+                                                              "reportUrl":  "https://tix.qq.com/search/skill?keyword=bfa073127d5d583c1ce6566e1fbe3d75"
+                                                          },
+                                                 "sanbu":  {
+                                                               "status":  "benign",
+                                                               "statusText":  "安全，无风险",
+                                                               "reportUrl":  "https://static.cloudsec.tencent.com/html-report-v2/2026/10/17/2177627_b386a059c6d94b47019debd0fb2d2f08.html?q-sign-algorithm=sha1\u0026q-ak=REDACTED_REDACTED_BY_LGD_EVAL\u0026q-sign-time=1792677189%3B1824213189\u0026q-key-time=1792677189%3B1824213189\u0026q-header-list=host\u0026q-url-param-list=\u0026q-signature=REDACTED"
+                                                           }
+                                             },
+                         "version":  "1.0.1",
+                         "versionId":  442719
+                     },
+                     {
+                         "changelog":  "权利块校正：©主体与著作权归属统一为自然人真名；代码许可与包内 .py 真值一致；补文末独立©署名行",
+                         "createdAt":  1791475944718,
+                         "securityReports":  {
+                                                 "keen":  {
+                                                              "status":  "benign",
+                                                              "statusText":  "安全，无风险",
+                                                              "reportUrl":  "https://tix.qq.com/search/skill?keyword=76b6cdca2e3cca6f82ac12c72cab5f93"
+                                                          },
+                                                 "sanbu":  {
+                                                               "status":  "benign",
+                                                               "statusText":  "安全，无风险",
+                                                               "reportUrl":  "https://static.cloudsec.tencent.com/html-report-v2/2026/10/09/2050914_972a20e6237b862ab88eb1bc569d77f7.html?q-sign-algorithm=sha1\u0026q-ak=REDACTED_REDACTED_BY_LGD_EVAL\u0026q-sign-time=1791995065%3B1823531065\u0026q-key-time=1791995065%3B1823531065\u0026q-header-list=host\u0026q-url-param-list=\u0026q-signature=REDACTED"
+                                                           }
+                                             },
+                         "version":  "1.1.2",
+                         "versionId":  415703
+                     },
+                     {
+                         "changelog":  "内容与元数据校准：补齐实现层（输出格式定义 / 示例 / 忠实性校验脚本）；许可与权属口径统一至 §3.2；功能向后兼容",
+                         "createdAt":  1791352035119,
+                         "securityReports":  {
+                                                 "keen":  {
+                                                              "status":  "benign",
+                                                              "statusText":  "安全，无风险",
+                                                              "reportUrl":  "https://tix.qq.com/search/skill?keyword=0ef2671e8176a769b1749305791daf70"
+                                                          },
+                                                 "sanbu":  {
+                                                               "status":  "benign",
+                                                               "statusText":  "安全，无风险",
+                                                               "reportUrl":  "https://static.cloudsec.tencent.com/html-report-v2/2026/10/07/2030120_0dc1ffea806f2c952a13c7bb5c35f00c.html?q-sign-algorithm=sha1\u0026q-ak=REDACTED_REDACTED_BY_LGD_EVAL\u0026q-sign-time=1791471382%3B1823007382\u0026q-key-time=1791471382%3B1823007382\u0026q-header-list=host\u0026q-url-param-list=\u0026q-signature=REDACTED"
+                                                           }
+                                             },
+                         "version":  "1.1.1",
+                         "versionId":  409337
+                     },
+                     {
+                         "changelog":  "Initial publish v1.0.0 (SynomosAI)",
+                         "createdAt":  1788186228520,
+                         "securityReports":  {
+                                                 "keen":  {
+                                                              "status":  "benign",
+                                                              "statusText":  "安全，无风险",
+                                                              "reportUrl":  "https://tix.qq.com/search/skill?keyword=d9622fde4e737ac2abe1fafb6c303bbe"
+                                                          },
+                                                 "sanbu":  {
+                                                               "status":  "benign",
+                                                               "statusText":  "安全，无风险",
+                                                               "reportUrl":  "https://static.cloudsec.tencent.com/html-report-v2/2026/08/31/1576390_009f76e79ab4231e1f6f1321e2e89015.html?q-sign-algorithm=sha1\u0026q-ak=REDACTED_REDACTED_BY_LGD_EVAL\u0026q-sign-time=1791196608%3B1822732608\u0026q-key-time=1791196608%3B1822732608\u0026q-header-list=host\u0026q-url-param-list=\u0026q-signature=REDACTED"
+                                                           }
+                                             },
+                         "version":  "1.0.0",
+                         "versionId":  278624
+                     }
+                 ]
+}
+
