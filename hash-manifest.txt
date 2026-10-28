@@ -5,15 +5,15 @@
 > 状态：完整清单（v2 重算完成）——修复前占位自述作废；本清单与 evidence 仓实际文件逐项一致。
 > 采集时间：2026-10-14T16:00:17Z ｜ 采集方法：GitHub API 回读 + 本地 SHA-256 实算。
 
-| 文件路径（evaluation-evidence 内） | SHA-256 | 大小 | 说明 |
+# | 文件路径（evaluation-evidence 内） | SHA-256 | 大小 | 说明 |  （表头，作注释跳过）
 |---|---|---|---|
 - `evidence/109-eval/评测明细表.csv` | `5d39a9d5074e2fa85d00f363535486efa4f050b84dea9af6bb533e8fd026d23a` | 165252 B | 109 仓全量评测明细（110 行×24 列）
 - `evidence/lgd-eval-self-test/_treeAll.txt` | `e9932f944800e856f50124f3c127eebc2e0d96bf2012366f77bdfbecc680c480` | 2049 B | 5 仓文件树完整性证据
-- `evidence/lgd-eval-self-test/_aiEntry.txt` | `4af91f4873c0b06b123cdc29138e1379223ef34127b4b099fc1125be25228c08` | 19548 B | AI 入口文件双语完整证据
+- `evidence/lgd-eval-self-test/_aiEntry.txt` | `733e6be8d6125754327f3198335b5825fe36cbf55e35bcca3733702f9ece5a16` | 19521 B | AI 入口文件双语完整证据
 - `evidence/lgd-eval-self-test/_linkCheck.txt` | `44b3a80856594c058b6af0ed6ad4e716628f1935817289b14c98fcac6d5d4a7a` | 2433 B | 外链可达性首测证据
 - `evidence/lgd-eval-self-test/_linkRecheck.txt` | `012f6ca775c0e7305446dd13ec23cf9e230b04e8a1a1e6a687ace1d2061d0c5b` | 521 B | 外链可达性复测证据
 - `evidence/lgd-eval-self-test/_postFix.txt` | `644a5e8571d77f02051bad4256e59b90a9751a9b1129e137772b29cd896eaca7` | 435 B | License/SPDX 修复后证据
 - `evidence/lgd-eval-self-test/_topicsVerify.txt` | `53a1e4f0751c2dfc12edab29c238f8db74e29988554811a2b641d0a511e4dd24` | 555 B | Topics 读回验证证据
 
-- 联动规则（AUTHORITY_INTERPRETATION_GUIDELINES 增补）：结论状态 ≤ 证据状态；证据降级则结论同步降级。
-- 复核方法：对每行路径 `gh api repos/LGD-Eval/evaluation-evidence/contents/<path>` 回读 base64 并重算 SHA-256 比对。
+# - 联动规则（AUTHORITY_INTERPRETATION_GUIDELINES 增补）：结论状态 ≤ 证据状态；证据降级则结论同步降级。
+# - 复核方法：对每行路径 `gh api repos/LGD-Eval/evaluation-evidence/contents/<path>` 回读 base64 并重算 SHA-256 比对。
