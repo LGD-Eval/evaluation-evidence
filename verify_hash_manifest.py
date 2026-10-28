@@ -39,6 +39,32 @@ def parse_manifest(manifest_path):
     return entries
 
 
+def _manifest_warnings(manifest_path):
+    """Flag non-empty, non-header lines that fail to parse (tamper-by-deletion guard, P1-8)."""
+    warnings = []
+    sep = re.compile(r"^\|[\s\-:|]+\|?$")
+    with open(manifest_path, "r", encoding="utf-8") as fh:
+        for ln in fh:
+            s = ln.strip()
+            if not s:
+                continue
+            if s.startswith(">") or s.startswith("#"):
+                continue
+            if s.startswith("|"):
+                if sep.match(s) or TABLE_ROW.match(s):
+                    continue
+                warnings.append("unparseable_table_row: %s" % s[:120])
+                continue
+            if s.startswith("- "):
+                if TABLE_ROW.match(s):
+                    continue
+                warnings.append("unparseable_row: %s" % s[:120])
+                continue
+            if re.search(r"\S", s):
+                warnings.append("unparseable_row: %s" % s[:120])
+    return warnings
+
+
 def sha256_of(path, chunk=1 << 16):
     """Compute SHA-256 of a file. / 计算文件 SHA-256。"""
     h = hashlib.sha256()
@@ -52,13 +78,16 @@ def sha256_of(path, chunk=1 << 16):
 
 
 def verify(manifest_path):
-    """Verify every entry; return (results, ok). / 逐项核验，返回结果与是否全部通过。"""
+    """Verify every entry; return (results, ok, warnings). / 逐项核验。"""
     base = os.path.dirname(os.path.abspath(manifest_path))
+    base_n = os.path.normpath(base)
+    warnings = _manifest_warnings(manifest_path)
     entries = parse_manifest(manifest_path)
     results = []
     ok = True
+    if warnings:
+        ok = False  # 不可解析行 = 清单完整性失败（P1-8）
     for rel, expected_sha, expected_size in entries:
-        full = os.path.join(base, rel)
         item = {
             "path": rel,
             "expected_sha256": expected_sha,
@@ -67,6 +96,20 @@ def verify(manifest_path):
             "actual_sha256": None,
             "actual_size": None,
         }
+        # P1-9: 拒绝绝对路径与越出清单目录的 '..' 穿越
+        if os.path.isabs(rel) or ".." in rel.replace("\\", "/").split("/"):
+            item["status"] = "FAIL"
+            item["reason"] = "path_traversal"
+            ok = False
+            results.append(item)
+            continue
+        full = os.path.normpath(os.path.join(base, rel))
+        if full != base_n and not full.startswith(base_n + os.sep):
+            item["status"] = "FAIL"
+            item["reason"] = "path_outside_base"
+            ok = False
+            results.append(item)
+            continue
         if not os.path.isfile(full):
             item["status"] = "FAIL"
             item["reason"] = "missing_file"
@@ -87,7 +130,7 @@ def verify(manifest_path):
             else:
                 item["status"] = "PASS"
         results.append(item)
-    return results, ok
+    return results, ok, warnings
 
 
 def main(argv=None):
@@ -102,7 +145,7 @@ def main(argv=None):
         print("ERROR: manifest not found: %s" % args.manifest, file=sys.stderr)
         return 2
 
-    results, ok = verify(args.manifest)
+    results, ok, warnings = verify(args.manifest)
     if args.json:
         payload = {
             "manifest": os.path.basename(args.manifest),
@@ -110,16 +153,20 @@ def main(argv=None):
             "total": len(results),
             "passed": sum(1 for r in results if r["status"] == "PASS"),
             "failed": sum(1 for r in results if r["status"] == "FAIL"),
+            "warnings": warnings,
             "entries": results,
         }
         print(json.dumps(payload, ensure_ascii=False, indent=2))
     else:
         for r in results:
             print("%s  %s" % (r["status"].ljust(4), r["path"]))
-        print("total=%d passed=%d failed=%d" % (
+        for w in warnings:
+            print("WARN  %s" % w)
+        print("total=%d passed=%d failed=%d warnings=%d" % (
             len(results),
             sum(1 for x in results if x["status"] == "PASS"),
             sum(1 for x in results if x["status"] == "FAIL"),
+            len(warnings),
         ))
     return 0 if ok else 1
 
