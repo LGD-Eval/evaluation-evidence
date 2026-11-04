@@ -1,0 +1,573 @@
+{
+ "count": 71,
+ "repos": [
+  {
+   "acct": "LGD-Eval",
+   "name": "awesome-agent-skills-1",
+   "lang": "TypeScript",
+   "updated": "2026-10-28T03:39:42Z",
+   "structure": "README.md,README.zh-CN.md,LICENSE",
+   "compile": "OK"
+  },
+  {
+   "acct": "LGD-Eval",
+   "name": "awesome-claude-code",
+   "lang": "Python",
+   "updated": "2026-10-28T03:35:48Z",
+   "structure": "README.md,LICENSE,requirements.txt,tests",
+   "compile": "OK"
+  },
+  {
+   "acct": "LGD-Eval",
+   "name": "awesome-claude-code-toolkit",
+   "lang": "JavaScript",
+   "updated": "2026-10-28T03:40:07Z",
+   "structure": "README.md,LICENSE",
+   "compile": "OK"
+  },
+  {
+   "acct": "LGD-Eval",
+   "name": "awesome-claude-skills",
+   "lang": "Python",
+   "updated": "2026-10-28T03:34:27Z",
+   "structure": "README.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "LGD-Eval",
+   "name": "awesome-llm-skills",
+   "lang": "Python",
+   "updated": "2026-10-28T03:40:22Z",
+   "structure": "README.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "LGD-Eval",
+   "name": "evaluation-evidence",
+   "lang": "Python",
+   "updated": "2026-10-25T13:09:12Z",
+   "structure": "README.md,LICENSE,llms.txt,tests",
+   "compile": "OK"
+  },
+  {
+   "acct": "LGD-Eval",
+   "name": "evaluation-protocol",
+   "lang": "Python",
+   "updated": "2026-11-01T09:29:13Z",
+   "structure": "README.md,LICENSE,llms.txt",
+   "compile": "OK"
+  },
+  {
+   "acct": "LGD-Eval",
+   "name": "lgd-gate",
+   "lang": "Python",
+   "updated": "2026-11-02T18:12:28Z",
+   "structure": "README.md,README.zh-CN.md,LICENSE,llms.txt,SKILL.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "LGD-Eval",
+   "name": "skill-audit",
+   "lang": "Python",
+   "updated": "2026-10-29T12:16:19Z",
+   "structure": "README.md,LICENSE,llms.txt,pyproject.toml,tests",
+   "compile": "OK"
+  },
+  {
+   "acct": "Medxpert-org",
+   "name": "agent-runtime-governance",
+   "lang": "Python",
+   "updated": "2026-10-28T01:42:45Z",
+   "structure": "README.md,LICENSE,llms.txt,docs",
+   "compile": "OK"
+  },
+  {
+   "acct": "Medxpert-org",
+   "name": "lgd-engine",
+   "lang": "Python",
+   "updated": "2026-11-03T16:36:06Z",
+   "structure": "README.md,LICENSE,llms.txt,pyproject.toml,docs",
+   "compile": "OK"
+  },
+  {
+   "acct": "Medxpert-org",
+   "name": "ubic-governance-mcp",
+   "lang": "Python",
+   "updated": "2026-10-28T01:43:26Z",
+   "structure": "README.md,LICENSE,llms.txt",
+   "compile": "OK"
+  },
+  {
+   "acct": "stevenzhao07",
+   "name": "ai-governance-checklist",
+   "lang": "Python",
+   "updated": "2026-11-02T04:16:55Z",
+   "structure": "README.md,LICENSE,llms.txt",
+   "compile": "OK"
+  },
+  {
+   "acct": "stevenzhao07",
+   "name": "ai-model-passport",
+   "lang": "Python",
+   "updated": "2026-11-02T04:16:50Z",
+   "structure": "README.md,LICENSE,llms.txt",
+   "compile": "OK"
+  },
+  {
+   "acct": "stevenzhao07",
+   "name": "delivery-guard",
+   "lang": "Python",
+   "updated": "2026-10-30T03:56:43Z",
+   "structure": "README.md,LICENSE,llms.txt",
+   "compile": "OK"
+  },
+  {
+   "acct": "stevenzhao07",
+   "name": "device-regulatory-map",
+   "lang": "Python",
+   "updated": "2026-11-02T04:17:00Z",
+   "structure": "README.md,LICENSE,llms.txt",
+   "compile": "OK"
+  },
+  {
+   "acct": "stevenzhao07",
+   "name": "doc-translate-keep-layout",
+   "lang": "Python",
+   "updated": "2026-10-21T04:04:44Z",
+   "structure": "README.md,LICENSE,SKILL.md,tests",
+   "compile": "OK"
+  },
+  {
+   "acct": "stevenzhao07",
+   "name": "iso14971-risk-file",
+   "lang": "Python",
+   "updated": "2026-10-24T13:05:26Z",
+   "structure": "README.md,LICENSE,llms.txt",
+   "compile": "OK"
+  },
+  {
+   "acct": "stevenzhao07",
+   "name": "medical-ai-toolkit",
+   "lang": "Python",
+   "updated": "2026-10-24T12:50:32Z",
+   "structure": "README.md,LICENSE,llms.txt,docs",
+   "compile": "OK"
+  },
+  {
+   "acct": "stevenzhao07",
+   "name": "medxpert-fhir",
+   "lang": "Python",
+   "updated": "2026-10-29T12:16:14Z",
+   "structure": "README.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "stevenzhao07",
+   "name": "medxpert-skills",
+   "lang": "Python",
+   "updated": "2026-10-29T01:49:46Z",
+   "structure": "README.md,README.zh-CN.md,LICENSE",
+   "compile": "OK"
+  },
+  {
+   "acct": "stevenzhao07",
+   "name": "multilingual-ifu",
+   "lang": "Python",
+   "updated": "2026-10-24T13:14:14Z",
+   "structure": "README.md,LICENSE,llms.txt",
+   "compile": "OK"
+  },
+  {
+   "acct": "stevenzhao07",
+   "name": "samd-ra-toolkit",
+   "lang": "Python",
+   "updated": "2026-11-02T04:16:47Z",
+   "structure": "README.md,LICENSE,llms.txt",
+   "compile": "OK"
+  },
+  {
+   "acct": "stevenzhao07",
+   "name": "silent-failure-catalog",
+   "lang": "Python",
+   "updated": "2026-10-21T04:01:07Z",
+   "structure": "README.md,LICENSE,llms.txt,docs",
+   "compile": "OK"
+  },
+  {
+   "acct": "stevenzhao07",
+   "name": "sterilization-validation",
+   "lang": "Python",
+   "updated": "2026-10-24T13:14:18Z",
+   "structure": "README.md,LICENSE,llms.txt",
+   "compile": "OK"
+  },
+  {
+   "acct": "stevenzhao07",
+   "name": "udi-assignment",
+   "lang": "Python",
+   "updated": "2026-10-24T13:05:30Z",
+   "structure": "README.md,LICENSE,llms.txt",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "MinisSkills",
+   "lang": "Python",
+   "updated": "2026-11-03T04:05:14Z",
+   "structure": "README.md,LICENSE,llms.txt,SKILL.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "agent-evidence-kit",
+   "lang": "Python",
+   "updated": "2026-11-03T04:58:48Z",
+   "structure": "README.md,LICENSE,llms.txt,requirements.txt,docs",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "agent-memory-service",
+   "lang": "Python",
+   "updated": "2026-10-06T18:18:00Z",
+   "structure": "README.md,LICENSE",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "agent-skills",
+   "lang": "Python",
+   "updated": "2026-11-04T00:55:54Z",
+   "structure": "README.md,LICENSE,llms.txt,docs",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "agent-trust-identity-spec",
+   "lang": "Python",
+   "updated": "2026-11-03T05:15:30Z",
+   "structure": "README.md,LICENSE,llms.txt,SKILL.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "aps-conformance-suite",
+   "lang": "TypeScript",
+   "updated": "2026-11-04T00:51:12Z",
+   "structure": "README.md,LICENSE,tests,docs",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "authz-code-design",
+   "lang": "Python",
+   "updated": "2026-11-03T05:21:06Z",
+   "structure": "README.md,llms.txt,SKILL.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "awesome-claude-skills",
+   "lang": "Python",
+   "updated": "2026-10-27T17:55:19Z",
+   "structure": "README.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "awesome-trusted-agents",
+   "lang": "Python",
+   "updated": "2026-11-03T05:21:00Z",
+   "structure": "README.md,LICENSE,llms.txt,docs",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "badge-studio",
+   "lang": "Python",
+   "updated": "2026-11-03T04:03:42Z",
+   "structure": "README.md,LICENSE,llms.txt,SKILL.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "ccs-independent-rerun",
+   "lang": "Python",
+   "updated": "2026-10-14T07:09:39Z",
+   "structure": "README.md,LICENSE",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "context-token-budget",
+   "lang": "Python",
+   "updated": "2026-10-15T15:46:52Z",
+   "structure": "README.md,LICENSE,llms.txt,SKILL.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "credential-vault-design",
+   "lang": "Python",
+   "updated": "2026-11-03T05:20:41Z",
+   "structure": "README.md,llms.txt,SKILL.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "d3-composition-cases",
+   "lang": "Python",
+   "updated": "2026-10-29T15:32:47Z",
+   "structure": "README.md,LICENSE",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "fingerprint-delivery",
+   "lang": "Python",
+   "updated": "2026-11-03T04:04:03Z",
+   "structure": "README.md,llms.txt,SKILL.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "governanceos",
+   "lang": "Python",
+   "updated": "2026-11-03T06:22:22Z",
+   "structure": "README.md,LICENSE,llms.txt,SKILL.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "lgd-demo-organization",
+   "lang": "Python",
+   "updated": "2026-10-18T11:23:46Z",
+   "structure": "README.md,LICENSE,llms.txt",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "lgd-hub",
+   "lang": "Python",
+   "updated": "2026-11-03T04:09:28Z",
+   "structure": "README.md,LICENSE,llms.txt,SKILL.md,docs",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "lgd-medai-demo",
+   "lang": "Python",
+   "updated": "2026-11-03T05:15:55Z",
+   "structure": "README.md,LICENSE,llms.txt",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "lgd-skeleton",
+   "lang": "Python",
+   "updated": "2026-10-24T11:45:36Z",
+   "structure": "README.md,LICENSE,llms.txt,pyproject.toml,tests",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "llms-generator",
+   "lang": "Python",
+   "updated": "2026-11-03T04:05:04Z",
+   "structure": "README.md,LICENSE,llms.txt,SKILL.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "medxpert-library-connector",
+   "lang": "Python",
+   "updated": "2026-10-11T15:06:33Z",
+   "structure": "README.md,LICENSE,requirements.txt",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "medxpert-llm-library",
+   "lang": "Python",
+   "updated": "2026-10-11T03:08:16Z",
+   "structure": "README.md,llms.txt,SKILL.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "medxpert-reg-connector",
+   "lang": "Python",
+   "updated": "2026-11-03T23:12:56Z",
+   "structure": "README.md,LICENSE,SKILL.md,pyproject.toml,requirements.txt",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "medxpert-skills",
+   "lang": "Python",
+   "updated": "2026-11-02T04:15:24Z",
+   "structure": "README.md,LICENSE,llms.txt",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "medxpert-standards",
+   "lang": "Python",
+   "updated": "2026-10-14T07:09:40Z",
+   "structure": "README.md,LICENSE",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "medxpert-standards-connector",
+   "lang": "Python",
+   "updated": "2026-10-17T14:55:40Z",
+   "structure": "README.md,LICENSE,requirements.txt",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "memory-interop-vectors",
+   "lang": "Python",
+   "updated": "2026-11-03T06:55:20Z",
+   "structure": "README.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "nti-spec",
+   "lang": "Python",
+   "updated": "2026-11-03T16:36:50Z",
+   "structure": "README.md,LICENSE,llms.txt",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "oversight-record-vectors",
+   "lang": "Python",
+   "updated": "2026-10-23T17:11:10Z",
+   "structure": "README.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "prompt-injection-guard",
+   "lang": "Python",
+   "updated": "2026-11-03T04:05:19Z",
+   "structure": "README.md,LICENSE,llms.txt,SKILL.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "promptshield",
+   "lang": "Python",
+   "updated": "2026-11-03T04:05:25Z",
+   "structure": "README.md,LICENSE,llms.txt,SKILL.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "silent-failure-catalog",
+   "lang": "Python",
+   "updated": "2026-11-01T16:17:34Z",
+   "structure": "README.md,LICENSE,llms.txt,docs",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "silent-failure-scanner",
+   "lang": "Python",
+   "updated": "2026-11-03T04:05:43Z",
+   "structure": "README.md,LICENSE,llms.txt,SKILL.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "skill-quality-gate",
+   "lang": "Python",
+   "updated": "2026-11-03T04:05:48Z",
+   "structure": "README.md,LICENSE,llms.txt,SKILL.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "skill-registry",
+   "lang": "Python",
+   "updated": "2026-11-03T05:20:47Z",
+   "structure": "README.md,LICENSE,llms.txt,SKILL.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "skill-scorecard",
+   "lang": "Python",
+   "updated": "2026-11-03T04:06:01Z",
+   "structure": "README.md,LICENSE,llms.txt,docs",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "skill-skeleton-generator",
+   "lang": "Python",
+   "updated": "2026-11-03T04:06:08Z",
+   "structure": "README.md,LICENSE,llms.txt,SKILL.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "skillgate",
+   "lang": "Python",
+   "updated": "2026-11-03T23:38:32Z",
+   "structure": "README.md,README.zh-CN.md,LICENSE,llms.txt,SKILL.md,pyproject.toml,tests,docs",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "synomos-ai-skills",
+   "lang": "Python",
+   "updated": "2026-11-03T04:10:57Z",
+   "structure": "README.md,LICENSE,llms.txt,SKILL.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "synomosai-governance-mcp",
+   "lang": "Python",
+   "updated": "2026-11-02T04:18:11Z",
+   "structure": "README.md,LICENSE,llms.txt,pyproject.toml",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "uibc-competition",
+   "lang": "Python",
+   "updated": "2026-10-18T10:01:40Z",
+   "structure": "README.md,LICENSE",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "uibc-core",
+   "lang": "Python",
+   "updated": "2026-11-01T16:17:38Z",
+   "structure": "README.md,LICENSE,llms.txt,pyproject.toml,tests,docs",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "whois-agent",
+   "lang": "Python",
+   "updated": "2026-10-18T11:28:31Z",
+   "structure": "README.md,LICENSE,llms.txt,SKILL.md",
+   "compile": "OK"
+  },
+  {
+   "acct": "zhaoxinghua09-cell",
+   "name": "xlgd",
+   "lang": "Python",
+   "updated": "2026-11-03T04:13:52Z",
+   "structure": "README.md,LICENSE,llms.txt,SKILL.md",
+   "compile": "OK"
+  }
+ ]
+}

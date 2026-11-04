@@ -1,8 +1,8 @@
-# Hash Manifest (Evaluation Evidence Registry) v3
-# 哈希存证清单 v3（2026-11-04 重算完成 · Muse 第三方监督 P1-3 整改）
+# Hash Manifest (Evaluation Evidence Registry) v4
+# 哈希存证清单 v4（2026-11-04 · Muse P1-3/P1-4/P1-5 整改后）
 
 > 存证原则：发布时记录 SHA-256；时间戳与区块链锚定见存证说明.md。
-> 状态：完整清单（v3 重算完成）——v2 清单因 4 个证据文件后续更新而失配，已按真实文件逐项重算；本清单与 evidence 仓实际文件逐项一致。
+> 状态：完整清单（v4）——v3 基础上新增 P1-4（71 仓扫描证据×2）与 P1-5（口径声明）产物 4 项，共 11 项。
 > 采集时间：2026-11-04T（本地）｜ 采集方法：本地 SHA-256 实算 + verify_hash_manifest.py 复核。
 
 | 文件路径（evaluation-evidence 内） | SHA-256 | 大小 | 说明 |
@@ -14,6 +14,10 @@
 - `evidence/lgd-eval-self-test/_linkRecheck.txt` | `012f6ca775c0e7305446dd13ec23cf9e230b04e8a1a1e6a687ace1d2061d0c5b` | 521 B | 外链可达性复测证据
 - `evidence/lgd-eval-self-test/_postFix.txt` | `59dce36aca4ab903542ff13167aea49e34d6ade72ea6240215eb19277de6eb35` | 443 B | License/SPDX 修复后证据
 - `evidence/lgd-eval-self-test/_topicsVerify.txt` | `53a1e4f0751c2dfc12edab29c238f8db74e29988554811a2b641d0a511e4dd24` | 555 B | Topics 读回验证证据
+- `evidence/71repo-scan-v3.1.0/skillgate_fp_survey.clean.json` | `a65c47f040032d419b142f8c09124b351f34a4a8b4395efee77e8a614403fd67` | 269846 B | P1-4：71 仓 v3.1.0 全量扫描明细（753 findings，路径已清洗）
+- `evidence/71repo-scan-v3.1.0/fullrun_71repos.json` | `49934e4ba99c4004973530b3905bf9a45b1fc119ff8ca5b2236a81c96a4e4691` | 14854 B | P1-4：71 仓清单（acct/name/lang/updated/structure）
+- `evidence/71repo-scan-v3.1.0/README-SCAN-EVIDENCE.md` | `995ef66cc693eb607b1b0d1292d1c155ff18a253523ce42548b595936b57b357` | 2309 B | P1-4：数字口径与红队复核记录
+- `evidence/71repo-scan-v3.1.0/SCORE-COMPARISON.md` | `8fec311c954ccc49d980831ad6f7328189597a4191a16ce90424491db00a1489` | 2332 B | P1-5：双引擎 Trust Score 口径声明
 
 - 联动规则（AUTHORITY_INTERPRETATION_GUIDELINES 增补）：结论状态 ≤ 证据状态；证据降级则结论同步降级。
 - 复核方法：verify_hash_manifest.py 对每行路径本地重算 SHA-256 与大小逐项比对，全部 PASS 方为有效。
