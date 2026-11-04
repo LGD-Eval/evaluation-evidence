@@ -1,10 +1,11 @@
-# Hash Manifest (Evaluation Evidence Registry) v4.3
+# Hash Manifest (Evaluation Evidence Registry) v4.4
 
-# 哈希存证清单 v4.3（2026-11-04 · Muse 复核① 更正完成（v3.1.3））
+# 哈希存证清单 v4.4（2026-11-05 · 追加引擎发布字节三项存证）
 
 > 存证原则：发布时记录 SHA-256；时间戳与区块链锚定见存证说明.md。
 
-> 状态：v4.3——v4.1 基础上 SCORE-COMPARISON.md 按 Muse 窄修 ③ 更新为 v4.3 更正版，哈希重算；
+> 状态：v4.4——v4.3 基础上追加引擎发布字节（skillgate / ast_analyzer / lgd_audit）三项哈希；
+> v4.3 说明：SCORE-COMPARISON.md 按 Muse 窄修 ③ 更新为更正版，哈希重算；
 > 采集方法：api.github.com 下载发布字节逐项实算 SHA-256 + 回读复核。
 
 | 文件路径（evaluation-evidence 内） | SHA-256 | 大小 | 说明 |
@@ -23,3 +24,15 @@
 
 - 联动规则（AUTHORITY_INTERPRETATION_GUIDELINES 增补）：结论状态 ≤ 证据状态；证据降级则结论同步降级。
 - 复核方法：verify_hash_manifest.py 对每行路径本地重算 SHA-256 与大小逐项比对，全部 PASS 方为有效。
+
+## 引擎发布字节（LGD-Eval/lgd-gate，v3.1.3）
+
+以下三项为评测器的发布字节，对其直接计算 SHA-256；`blob` 为 GitHub 返回的对象标识，可用于交叉核对。
+
+| 文件 | SHA-256 | 大小 | blob |
+|---|---|---|---|
+- `skillgate.py` | `47f8226b6d1a42cc62c68e5547b81553d240e8dcc3e8a857deb87f3ace115b8b` | 66741 B | `7126100ab55d`
+- `ast_analyzer.py` | `4cf6442141e6c162d8879ea135661b398a1034ee90ba7bee8c310a72dec98159` | 6277 B | `58a2b79e6099`
+- `lgd_audit.py` | `b4c11091e2b04841ab401bea5718a975e6bcf6e111f8aae54bf89d34f0a21ae7` | 30941 B | `f66ddd69f7f2`
+
+> 说明：lgd_audit.py 于 2026-11-05 修正四处判据（血缘登记接受 CHANGELOG、人工确认仅在存在破坏性自动动作时强制、检查项分类说明匹配、版本一致性以 SKILL.md frontmatter 为权威），commit 39b4e3a9b5，blob f66ddd69f7f2，30941 B。
