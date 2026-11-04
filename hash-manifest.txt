@@ -1,10 +1,10 @@
-# Hash Manifest (Evaluation Evidence Registry) v4.1
+# Hash Manifest (Evaluation Evidence Registry) v4.2
 
-# 哈希存证清单 v4.1（2026-11-04 · Muse 复测 P1-3 窄修）
+# 哈希存证清单 v4.2（2026-11-04 · Muse 复测窄修 ②③ 完成后）
 
 > 存证原则：发布时记录 SHA-256；时间戳与区块链锚定见存证说明.md。
 
-> 状态：v4.1——按 GitHub 发布字节（LF）重算全部 11 项（v4 的 5 项 self-test 哈希曾按本地 CRLF 计算失配，已更正）；
+> 状态：v4.2——v4.1 基础上 SCORE-COMPARISON.md 按 Muse 窄修 ③ 更新为 v4.2 更正版，哈希重算；
 > 采集方法：api.github.com 下载发布字节逐项实算 SHA-256 + 回读复核。
 
 | 文件路径（evaluation-evidence 内） | SHA-256 | 大小 | 说明 |
@@ -19,7 +19,7 @@
 - `evidence/71repo-scan-v3.1.0/skillgate_fp_survey.clean.json` | `a65c47f040032d419b142f8c09124b351f34a4a8b4395efee77e8a614403fd67` | 269846 B | P1-4：71 仓 v3.1.0 全量扫描明细（753 findings，路径已清洗）
 - `evidence/71repo-scan-v3.1.0/fullrun_71repos.json` | `49934e4ba99c4004973530b3905bf9a45b1fc119ff8ca5b2236a81c96a4e4691` | 14854 B | P1-4：71 仓清单（acct/name/lang/updated/structure）
 - `evidence/71repo-scan-v3.1.0/README-SCAN-EVIDENCE.md` | `995ef66cc693eb607b1b0d1292d1c155ff18a253523ce42548b595936b57b357` | 2309 B | P1-4：数字口径与红队复核记录
-- `evidence/71repo-scan-v3.1.0/SCORE-COMPARISON.md` | `8fec311c954ccc49d980831ad6f7328189597a4191a16ce90424491db00a1489` | 2332 B | P1-5：双引擎 Trust Score 口径声明
+- `evidence/71repo-scan-v3.1.0/SCORE-COMPARISON.md` | `f865e79b4bc88124ae6978b94c6df9e68dc2909487f97c9c15f80ee73c1d9acc` | 3781 B | P1-5：双引擎 Trust Score 口径声明（v4.2 更正版）
 
 - 联动规则（AUTHORITY_INTERPRETATION_GUIDELINES 增补）：结论状态 ≤ 证据状态；证据降级则结论同步降级。
 - 复核方法：verify_hash_manifest.py 对每行路径本地重算 SHA-256 与大小逐项比对，全部 PASS 方为有效。
