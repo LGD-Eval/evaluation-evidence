@@ -51,3 +51,5 @@ python certify.py <你的技能目录> --name <技能名> --repo <仓库地址>
 ---
 
 理论依据：LGD 三律（有籍 / 有证 / 有门禁），AI 治理标准参与研究（W3C / ITU-T FG-TIDA）。
+
+> 评测对象说明：上表评的是**技能包目录**（`coze-publish/01-skill-methodology` 等），不是仓库整体。各仓库自身（含 CI、依赖、文档）的自评分见该仓 README 顶部，两者对象不同、不可互相替代，也不存在第二套评分口径。
